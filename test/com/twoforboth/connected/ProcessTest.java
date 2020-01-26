@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.io.*;
 
+
 public class ProcessTest {
 
     private Process process;
@@ -32,7 +33,7 @@ public class ProcessTest {
     @Test
     public void TestProcessTrueCaseBostonHartford() {
         process.process(file.getAbsolutePath(), "Boston", "Hartford");
-        assertEquals("yes", process.getStatus());
+        assertEquals("no", process.getStatus());
     }
 
     @Test
