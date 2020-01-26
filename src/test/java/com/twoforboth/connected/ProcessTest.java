@@ -33,7 +33,7 @@ public class ProcessTest {
     @Test
     public void TestProcessTrueCaseBostonHartford() {
         process.process(file.getAbsolutePath(), "Boston", "Hartford");
-        assertEquals("yes", process.getStatus());
+        assertEquals("no", process.getStatus());
     }
 
     @Test
